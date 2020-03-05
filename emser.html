@@ -24,7 +24,7 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
   <a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
  </div>
@@ -37,9 +37,10 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">ABOUT</h2>
-      <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <img src="EmmaFridBW.png" class="w3-round" alt="Emma">
+      <p class="w3-justify">
+      Emma Frid received her PhD in Sound and Music Computing in January 2020. Her thesis was entitled <i>Diverse Sounds - Enabling Inclusive Sonic Interaction</i> and focused on how Sonic Interaction Design can be used to promote inclusion and diversity in music-making. Emma is the author of the first full review on Accessible Digital Musical Instruments (ADMIs). Her main research interests include   inclusive music technology and practice, accessible digital musical instruments,sonic interaction design, multisensory perception, multimodal feedback and haptics. She holds a Master’s of Science in Engineering in Media Technology from KTH Royal Institute of Technology and has been a graduate research trainee at Input Devices and Music Interaction Laboratory (IDMIL), McGill University, where she completed a Master’s Thesis project on vibrotactile feedback for live electronics. 
+      </p>
     </div>
   </div>
 
@@ -47,12 +48,13 @@ body {font-family: "Lato", sans-serif}
   <!-- The publications section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="publications">
     <h2 class="w3-wide">PUBLICATIONS</h2>
-    <ul style="list-style-type:square;">
+    <div class="w3-container w3-left-align">
+    <ul style="list-style-type:square;width:100%">
       <li>E. Frid. Diverse Sounds - Enabling Inclusive Sonic Interaction. KTH Royal Institute of Technology. PhD Thesis presented January 10, 2020. Available from: http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-265159</li>
       <li>K. Falkenberg Hansen, A. Latupeirissa, H. Lindetorp and E. Frid. Unproved Methods from the Frontier in the Course Curriculum: A Bidirectional and Mutually Beneficial Research Challenge. Proceedings of the International Technology, Education and Development Conference, INTED, 2020.</li>
       <li>E. Frid, C. Gomes and Z. Jin. Music Creation by Example. Proceedings of ACM Conference on Human Factors in Computing Systems (CHI, 24.3% acceptance rate), 2020.</li>
       <li>E. Frid, Accessible Digital Musical Instruments - A Review of Musical Interfaces in Inclusive Music Practice. Multimodal Technologies and Interaction, vol. 3, 2019.</li>
-      <li>C. Panariello, M. Sk¨old, E. Frid and R. Bresin. From Vocal Sketching to Sound Models by Means of a Sound-Based Musical Transcription System. Proceedings of the Sound and Music Computing Conference (SMC), 2019.</li>
+      <li>C. Panariello, M. Sköld, E. Frid and R. Bresin. From Vocal Sketching to Sound Models by Means of a Sound-Based Musical Transcription System. Proceedings of the Sound and Music Computing Conference (SMC), 2019.</li>
       <li>A.B. Latupeirissa, E. Frid and R. Bresin. Sonic Characteristics of Robots in Films. Proceedings of the Sound and Music Computing Conference (SMC), 2019.</li>
       <li>E. Frid, H. Lindetorp, K. F. Hansen, L Elblaus & R. Bresin. Sound Forest - An Accessible Multisensory Music Installation. ACM Conference on Human Factors in Computing Systems (CHI, 25.7% acceptance rate), 2019.</li>
       <li>E. Frid, L. Elblaus & R. Bresin. Interactive Sonification of a Fluid Dance Movement - An Exploratory Study. Journal on Multimodal User Interfaces (JMUI), 2018.</li>
@@ -60,49 +62,42 @@ body {font-family: "Lato", sans-serif}
       <li>E. Frid. Accessible Digital Musical Instruments: A Survey of Inclusive Instruments Presented at the NIME, SMC and ICMC Conferences. Proceedings of the International Computer Music Conference (ICMC), 2018.</li>
       <li>E. Frid, R. Bresin and S. Alexanderson. Perception of Mechanical Sounds Inherent to Expressive Gestures of a NAO Robot - Implications for Movement Sonification of Humanoids. Proceedings of the Sound and Music Computing Conference (SMC), 2018.</li>
       <li>E. Frid. Sonification of Women in Sound and Music Computing - The Sound of Female Authorship in ICMC, SMC and NIME Proceedings. Proceedings of the International Computer Music Conference (ICMC), 2017.</li>
-    </ul>
+	  <li>E. Frid, R. Bresin, J. Moll, & E. Sallnäas-Pysander. An Exploratory Study on the Effect of Auditory Feedback on Gaze Behavior in a Virtual Throwing Task With and Without Haptic Feedback. Proceedings of the Sound and Muisc Computing Conference (SMC), 2017.</li>
+	  <li>E. Frid, R. Bresin, L. Elblaus & P. Alborno. Interactive Sonification of Spontaneous Movement of Children: Cross-Modal Mapping and the Perception of Body Movement Qualities through Sound. Frontiers
+in Neuroscience, vol. 10, 2016.</li>
+      <li>E. Frid, L. Elblaus & R. Bresin Sonification of Fluidity - An Exploration of Perceptual Connotations
+of a Particular Movement Feature. Proceedings of 5th Interactive Sonification Workshop (ISon), 2016.</li>
+      <li>R. Bresin, L. Elblaus, E. Frid, F. Favero, L. Annersten, D. Berner & F. Morreale. Sound Forest/Ljudskogen: A Large-Scale String Based Interactive Musical Instrument. Proceedings of the Sound and Music Computing Conference (SMC), 2016.</li>
+      <li>J. Paloranta, A. Lundström, L. Elblaus, R. Bresin and E. Frid. Interaction with a Large Sized Augmented String Instrument Intended for a Public Setting. Proceedings of the Sound and Music Computing Conference (SMC), 2016.</li>
+      <li>M. Giordano, I. Hattwick, I. Franco, D. Egloff, E. Frid, V. Lamontagne, C. TeZ, C. Salter, & M.M. Wanderley. Design and Implementation of a Whole-Body Haptic Suit for “Ilinx”, a Multisensory Art Installation. Proceedings of the Sound and Music Computing Conference (SMC), 2015.</li>
+      <li>E. Frid, M. Giordano, M. M. Schumacher & M.M. Wanderley. Physical and Perceptual Characterization of a Tactile Display for a Live-Electronics Notification System. Proceedings of the joint ICMC | SMC Conference, 2014.</li>
+      </ul>
+      </div>
+    </div>
   </div>
   
   <!-- The contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +46738117028 <br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: contact@emmafrid.se<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+    	<div class="w3-wide w3-center">
+      	<div class="w3-col w3-large">
+        	<i class="fa fa-map-marker" style="width:30px"></i> Stockholm, Sweden<br>
+        	<i class="fa fa-phone" style="width:30px"></i> Phone: +46738117028 <br>
+        	<i class="fa fa-envelope" style="width:30px"> </i> Email: contact@emmafrid.se<br>
+      	</div>
+        </div>
     </div>
   </div>
   
 <!-- End Page Content -->
 </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <i class="fa fa-github w3-hover-opacity"></i>
 </footer>
 
 

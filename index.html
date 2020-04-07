@@ -25,16 +25,17 @@ body {font-family: "Lato", sans-serif}
  
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <div id="myLinks">
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
   <a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
   <a href="#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  </div>
  </div>
 
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
- 
   <!-- The home section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
@@ -120,6 +121,16 @@ of a Particular Movement Feature. Proceedings of the 5th Interactive Sonificatio
   <a href="https://www.last.fm/user/emmenru" class="fa fa-lastfm w3-hover-opacity" style="text-decoration: none"></a>
 </footer>
 
+	
+<!-- Function for navBar --> 
+  function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	x.style.display = "none";
+	} else {
+	x.style.display = "block";
+	}
+	}
 
 
 </body>

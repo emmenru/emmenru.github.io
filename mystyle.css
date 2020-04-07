@@ -1,6 +1,7 @@
 table, td, th {
   border: none;
   vertical-align:top;
+  text-align: justify;
 }
 
 table {
@@ -13,6 +14,3 @@ th {
   text-align: left;
 }
 
-td {
-   text-align: justify;
-}

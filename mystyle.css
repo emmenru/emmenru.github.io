@@ -1,0 +1,14 @@
+table, td, th {
+  border: none;
+  vertical-align:top;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+th {
+  text-align: left;
+}

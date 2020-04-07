@@ -25,12 +25,10 @@ body {font-family: "Lato", sans-serif}
  
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <div id="myLinks">
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
   <a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PUBLICATIONS</a>
   <a href="#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  </div>
  </div>
 
 <!-- Page content -->
@@ -42,7 +40,14 @@ body {font-family: "Lato", sans-serif}
       <h2 class="w3-wide w3-center">ABOUT</h2>
       <img src="emmaFridBW.png" class="w3-round" alt="Emma">
       <p class="w3-justify">
-      Emma Frid received her PhD in Sound and Music Computing from the Division of Media Technology and Interaction Design at KTH Royal Institute of Technology in January 2020. Her thesis was entitled <i>"Diverse Sounds - Enabling Inclusive Sonic Interaction"</i> and focused on how Sonic Interaction Design can be used to promote inclusion and diversity in music-making. Emma is the author of the first full review on Accessible Digital Musical Instruments (ADMIs). Her research interests include Sonic Interaction Design (SID), inclusive music technology and practice, multimodal interface design, Human Computer Interaction (HCI), human-AI interaction, and haptics. Emma holds a Master’s of Science in Engineering in Media Technology from KTH Royal Institute of Technology and has been a graduate research trainee at Input Devices and Music Interaction Laboratory (IDMIL), McGill University, where she completed a Master’s Thesis project on vibrotactile feedback for live electronics. Emma has also worked as an Audio Research Intern at the Adobe Creative Intelligence Lab in San Francisco, where she focused on interfaces supporting AI Music generation. When Emma is not working on music tech or sound and music research, she is playing the violin and piano and takes pictures. 
+      Emma Frid received her PhD in Sound and Music Computing from the Division of Media Technology and Interaction Design at KTH Royal Institute of Technology in January 2020. 
+      Her thesis was entitled <i>"Diverse Sounds - Enabling Inclusive Sonic Interaction"</i> and focused on how Sonic Interaction Design can be used to promote inclusion and diversity in music-making. 
+      Emma is the author of the first full review on Accessible Digital Musical Instruments (ADMIs). 
+      Her research interests include Sonic Interaction Design (SID), inclusive music technology and practice, multimodal interface design, Human Computer Interaction (HCI), human-AI interaction, and haptics.
+      Emma holds a Master’s of Science in Engineering in Media Technology from KTH Royal Institute of Technology and has been a graduate research trainee at Input Devices and Music Interaction Laboratory (IDMIL), McGill University, 
+      where she completed a Master’s Thesis project on vibrotactile feedback for live electronics. Emma has also worked as an Audio Research Intern at the Adobe Creative Intelligence Lab in San Francisco, 
+      where she focused on interfaces supporting AI Music generation. 
+      When Emma is not working on music tech or sound and music research, she is playing the violin and piano and takes pictures. 
       </p>
     </div>
   </div>
@@ -65,8 +70,8 @@ body {font-family: "Lato", sans-serif}
       <li>E. Frid. Accessible Digital Musical Instruments: A Survey of Inclusive Instruments Presented at the NIME, SMC and ICMC Conferences. Proceedings of the International Computer Music Conference (ICMC), 2018.</li>
       <li>E. Frid, R. Bresin and S. Alexanderson. Perception of Mechanical Sounds Inherent to Expressive Gestures of a NAO Robot - Implications for Movement Sonification of Humanoids. Proceedings of the Sound and Music Computing Conference (SMC), 2018.</li>
       <li>E. Frid. Sonification of Women in Sound and Music Computing - The Sound of Female Authorship in ICMC, SMC and NIME Proceedings. Proceedings of the International Computer Music Conference (ICMC), 2017.</li>
-	  <li>E. Frid, R. Bresin, J. Moll, & E.L. Sallnäs-Pysander. An Exploratory Study on the Effect of Auditory Feedback on Gaze Behavior in a Virtual Throwing Task With and Without Haptic Feedback. Proceedings of the Sound and Muisc Computing Conference (SMC), 2017.</li>
-	  <li>E. Frid, R. Bresin, L. Elblaus & P. Alborno. Interactive Sonification of Spontaneous Movement of Children: Cross-Modal Mapping and the Perception of Body Movement Qualities through Sound. Frontiers
+      <li>E. Frid, R. Bresin, J. Moll, & E.L. Sallnäs-Pysander. An Exploratory Study on the Effect of Auditory Feedback on Gaze Behavior in a Virtual Throwing Task With and Without Haptic Feedback. Proceedings of the Sound and Muisc Computing Conference (SMC), 2017.</li>
+      <li>E. Frid, R. Bresin, L. Elblaus & P. Alborno. Interactive Sonification of Spontaneous Movement of Children: Cross-Modal Mapping and the Perception of Body Movement Qualities through Sound. Frontiers
 in Neuroscience, vol. 10, 2016.</li>
       <li>E. Frid, L. Elblaus & R. Bresin Sonification of Fluidity - An Exploration of Perceptual Connotations
 of a Particular Movement Feature. Proceedings of the 5th Interactive Sonification Workshop (ISon), 2016.</li>
@@ -121,17 +126,19 @@ of a Particular Movement Feature. Proceedings of the 5th Interactive Sonificatio
   <a href="https://www.last.fm/user/emmenru" class="fa fa-lastfm w3-hover-opacity" style="text-decoration: none"></a>
 </footer>
 
+<!-- Script -->
 <script>	
-<!-- Function for navBar --> 
-  function myFunction() {
-	var x = document.getElementById("myLinks");
-	if (x.style.display === "block") {
-	x.style.display = "none";
-	} else {
-	x.style.display = "block";
-	}
-	}
+// to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 </script>
 
 </body>
+
 </html>

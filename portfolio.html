@@ -1,1 +1,48 @@
-Projects 
+<!DOCTYPE html>
+<html lang="en">
+<title>Portfolio Emma Frid</title>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    var news = 0;
+
+    hidenews = "- Hide news archive";
+    shownews = "+ Show news archive";
+
+    $(".archive").html( shownews );
+    $(".news").hide();
+    $(".archive").click(function (e) {
+       e.preventDefault();
+    var $container = $(e.currentTarget).closest('.accordion-container');
+           if ($container.find(".news:eq("+news+")").is(":hidden")) {
+               $container.find(".news:not(:lt("+news+"))").slideDown();
+               $container.find(".archive").html( hidenews );
+           } else {
+               $container.find(".news:not(:lt("+news+"))").slideUp();
+               $container.find(".archive").html( shownews );
+           }
+    });
+
+    });
+</script>
+
+</head>
+
+<body>
+
+Coming soon....
+
+
+</body>
+
+</html>
+

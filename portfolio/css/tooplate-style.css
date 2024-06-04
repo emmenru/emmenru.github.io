@@ -659,7 +659,7 @@ figure.effect-bubba:hover p {
 /* Media Queries */
 
 @media only screen and (min-width: 400px) {
-	.cd-hero-slider h2 { font-size: 1.4em; }
+	.cd-hero-slider h2 { font-size: 1.0em; }
 
 	/*.cd-hero-slider .selected .cd-full-width figure.effect-ruby h2.tm-figure-title {
 		margin-bottom: 14px;
@@ -856,7 +856,7 @@ figure.effect-bubba:hover p {
 @media only screen and (min-width: 1333px) {
 	.cd-slider-nav a,
 	.navbar-nav .nav-link {
-		font-size: 1.2em;
+		font-size: 1.em;
 		width: 160px;
 		height: 110px;
 	}

@@ -19,7 +19,7 @@ body {
 ul { padding: 0; margin: 0; }
 figure { margin: 0; }
 p:last-child { margin-bottom: 0; }
-a { color: #0b0ba3; }
+a { color: #1342ed; }
 a, button { transition: all 0.3s ease; }
 a:hover,
 a:focus {
@@ -138,12 +138,12 @@ button:focus { outline: none; }
 }
 
 /* Background & menu colors */
-.cd-hero-slider li:nth-of-type(1) { background-color: rgba(0, 0, 0, 0.82); }/*rgba(0, 0, 56, 0.82); }*/
-.cd-hero-slider li:nth-of-type(2) { background-color: rgba(0, 0, 0, 0.82); }
-.cd-hero-slider li:nth-of-type(3) { background-color: rgba(0, 0, 0, 0.82); }
-.cd-hero-slider li:nth-of-type(4) { background-color: rgba(0, 0, 0, 0.82); }
-.cd-hero-slider li:nth-of-type(5) { background-color: rgba(0, 0, 0, 0.82); }
-.cd-hero-slider li:nth-of-type(6) { background-color: rgba(0, 0, 0, 0.82); }
+.cd-hero-slider li:nth-of-type(1) { background-color: rgba(0, 0, 0, 0.86); }/*rgba(0, 0, 56, 0.82); }*/
+.cd-hero-slider li:nth-of-type(2) { background-color: rgba(0, 0, 0, 0.86); }
+.cd-hero-slider li:nth-of-type(3) { background-color: rgba(0, 0, 0, 0.86); }
+.cd-hero-slider li:nth-of-type(4) { background-color: rgba(0, 0, 0, 0.86); }
+.cd-hero-slider li:nth-of-type(5) { background-color: rgba(0, 0, 0, 0.86); }
+.cd-hero-slider li:nth-of-type(6) { background-color: rgba(0, 0, 0, 0.86); }
 
 
 .cd-slider-nav .nav-item:nth-of-type(1).selected .nav-link,

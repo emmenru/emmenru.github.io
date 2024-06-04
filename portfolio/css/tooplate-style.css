@@ -641,7 +641,8 @@ figure.effect-bubba:hover p {
 }
 
 /*.tm-pad-t { padding-top: 40px; }*/
-.tm-white-box-margin-b { margin-bottom: 30px; }
+.tm-white-box-margin-b {margin-top: 20px; 
+						margin-bottom: 30px; }
 .grid-item { max-width: 340px; }
 /*.tm-img-gallery-container-2 { max-width: 453px; }*/
 .tm-gallery-title span { width: 100%; }

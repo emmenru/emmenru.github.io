@@ -14,3 +14,8 @@ th {
   text-align: left;
 }
 
+/* Change to blue on click */
+
+a {
+  -webkit-tap-highlight-color: rgb(127, 17, 224, 1);
+}

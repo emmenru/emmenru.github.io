@@ -111,7 +111,7 @@ button:focus { outline: none; }
 	width: auto;
 }
 
-.cd-slider-nav a { text-transform: capitalize; }
+.cd-slider-nav a { text-transform: capitalize;}
 .navbar-nav .nav-item { float: none; }
 .navbar-nav .nav-item+.nav-item { margin-left: 0; }
 

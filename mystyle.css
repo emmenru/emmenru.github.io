@@ -14,8 +14,7 @@ th {
   text-align: left;
 }
 
-/* Change to blue on click */
-
+/* Change to purple on click on mobile screen */
 a {
   -webkit-tap-highlight-color: rgb(127, 17, 224, 1);
 }

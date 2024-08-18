@@ -191,7 +191,7 @@ http://www.tooplate.com/view/2086-multi-color
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
                                                     <h2 class="tm-text-title">Tools</h2>
                                                     <p class="tm-text">
-                                                       R, Max/MSP, SPSS. 
+                                                       R, SPSS, Max/MSP. 
                                                     </p>
                                                 </div>
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
@@ -280,12 +280,12 @@ http://www.tooplate.com/view/2086-multi-color
                                             <div class="tm-flex">
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
                                                     <h2 class="tm-text-title">Background</h2>
-                                                    <p class="tm-text">Although some of the first pioneers in Computer Science were women (see e.g. <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> and <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>), the field of computer music, as well as the <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics">STEM</a> fields in general, are still struggling with gender balance. As voiced by <a class="link-opacity-10" href="https://doi.org/10.1080/07494467.2016.1176764">Frida Abtan</a>: <i>“At conferences and workshops, there are always a few of us eyeing each other and asking ourselves: why are women still so under-represented in electronic music?” </i> This question is the overarching premise of this work.
+                                                    <p class="tm-text">Although some of the first pioneers in Computer Science (e.g. <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> and <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>) were women, the field of Computer Music, as well as the <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Science,_technology,_engineering,_and_mathematics">STEM</a> fields in general, are still struggling with gender imbalance. In this project I wanted to explore the current status of this gender gap. <!-- As voiced by <a class="link-opacity-10" href="https://doi.org/10.1080/07494467.2016.1176764">Frida Abtan</a>: <i>“At conferences and workshops, there are always a few of us eyeing each other and asking ourselves: why are women still so under-represented in electronic music?” </i> This question is the overarching premise of this work. -->
                                                     </p>
                                                 </div>
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding">
                                                     <h2 class="tm-text-title">Aim</h2>
-                                                    <p class="tm-text">The goal of this project was to estimate the number of female authors publishing papers in the proceedings of the most important conferences in the research field focused on Computer Music: <a class="link-opacity-10" href="https://smcnetwork.org/">Sound and Music Computing Conference (SMC)</a>, <a class="link-opacity-10" href="https://www.nime.org/">New Interfaces for Musical Expression (NIME)</a>, and <a class="link-opacity-10" href="https://www.computermusic.org/icmc-conference/">International Computer Music Conference (ICMC)</a>. 
+                                                    <p class="tm-text">The goal of this project was to estimate the number of female authors publishing papers in the proceedings of the most important conferences in the Computer Music research field: <a class="link-opacity-10" href="https://smcnetwork.org/">Sound and Music Computing Conference (SMC)</a>, <a class="link-opacity-10" href="https://www.nime.org/">New Interfaces for Musical Expression (NIME)</a>, and <a class="link-opacity-10" href="https://www.computermusic.org/icmc-conference/">International Computer Music Conference (ICMC)</a>. 
                                                     </p>     
                                                 </div>
                                             </div>
@@ -298,9 +298,10 @@ http://www.tooplate.com/view/2086-multi-color
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
                                                     <h2 class="tm-text-title">Approach</h2>
                                                     <p class="tm-text">
-                                                     In the absence of a readily available dataset, I constructed one by extracting information from external sources such as PDF proceedings, conference webpages, and BibTex files using custom Python scripts. To engineer the 'author gender' feature, I utilized the genderize.io API for prediction ('male,' 'female,' or 'unknown').  Manual research further refined the data for names classified as 'unknown'. The data was then fitted to a model with Autoregressive Integrated Moving Average (ARIMA) errors. 
-
-                                                    To emphasize the the skewed distribution of author genders (predominantly male names), I converted the data into audible representations using <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Sonification">sonification</a>; I synthesized musical sounds that illustrated the gender gap. </p> 
+                                                     In the absence of a readily available dataset, I constructed one by extracting information from external sources such as PDF proceedings, conference webpages, and BibTex files using custom Python scripts. To engineer the <i>'author gender'</i> feature, I utilized the genderize.io API for gender prediction ('male,' 'female,' or 'unknown').  Manual research further refined the data for names classified as 'unknown'. The data was then fitted to a model with Autoregressive Integrated Moving Average (ARIMA) errors.    
+                                                     <br>
+                                                    <br>
+                                                    To further emphasize the the skewed distribution of author genders (the vast majority was still predominantly male), I converted the data into musical sounds using a technique called <a class="link-opacity-10" href="https://en.wikipedia.org/wiki/Sonification">sonification</a>.</p> 
                                                 </div>
                                             </div>
                                         </div>
@@ -312,12 +313,17 @@ http://www.tooplate.com/view/2086-multi-color
                                                 <div class="tm-bg-white-translucent text-xs-left tm-textbox tm-textbox-padding">
                                                     <h2 class="tm-text-title">Key insights</h2>
                                                     <p class="tm-text">
-                                                        The project's findings are documented in two publications (2017, 2021). The work has been actively disseminated through presentations at conferences and seminar series, sparking animated discussions within the research community. These discussions highlight the importance of gender balance, contributing to ongoing efforts towards greater inclusivity in the field.
+                                                        For data until 2016, female author ratio was consistently below 20%. This tendency was largely consistent until year 2021. On the positive side, analysis of one of the proceedings (ICMC) suggested a tendency towards improvement in more recent years, with values ranging from 2.8% (in 1981) to 16.2% (in 2017). A regression model indicted a positive increase in female author names of 0.17% (± 0.1) per year (p < .001). 
+                                                        <!--The first paper focused on the gender gap in proceedings up til 2016, with findings suggested values consistently below 20% female author names. The second paper followed up on the previous work, including data until 2021. Findings highlighted that the gender gap was persistent and that the numbers had not drastically changed since 2016. --> 
+
+                                                        <br>
+                                                        <br>
+                                                        These findings were documented in two publications and disseminated through presentations at conferences and seminar series, sparking animated discussions within the research community. These discussions have contributed to the ongoing efforts towards achieveing greater inclusivity in the Computer Music field.
 
                                                         <br>
                                                         <br>
 
-                                                        The first paper focuses on the gender gap in proceedings up til 2016, with findings suggested values consistently below 20% female author names. The second paper followed up on the previous work, including data until 2021. Findings highlighted that the gender gap was persistent and that the numbers had not drastically changed since 2016. However, temporal analysis of predicted genders of unique author names in the ICMC proceedings suggested a tendency towards higher percentages of female names in more recent years, with values ranging from 2.8% (1981) to 16.2% (2017), and an overall of 10.4% female names. The regression model indicted a positive increase in female author names of 0.17% (± 0.1) per year (p < .001). 
+
 
                                                     </p>
                                                 </div>

@@ -14,29 +14,31 @@
       </style>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script>
-         $(document).ready(function(){
-             var news = 0;
-         
-             hidenews = "";
-             shownews = "+ Show archive";
-         
-             $(".archive").html( shownews );
-             $(".news").hide();
-             $(".archive").click(function (e) {
-                e.preventDefault();
-             var $container = $(e.currentTarget).closest('.accordion-container');
-                    if ($container.find(".news:eq("+news+")").is(":hidden")) {
-                        $container.find(".news:not(:lt("+news+"))").slideDown();
-                        $container.find(".archive").html( hidenews );
-                    } else {
-                        $container.find(".news:not(:lt("+news+"))").slideUp();
-                        $container.find(".archive").html( shownews );
-                    }
-             });
-         
-             });
-         
-      </script>
+    $(document).ready(function(){
+        var isExpanded = false;
+        
+        // Set initial text for the archive toggle
+        $(".archive").text("+ Show archive");
+        $(".news").hide(); // Initially hide all news items
+        
+        $(".archive").click(function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+            var $container = $(e.currentTarget).closest('.accordion-container');
+
+            // Toggle display based on current state
+            if (isExpanded) {
+                $container.find(".news").slideUp(); // Hide all news items
+                $(".archive").text("+ Show archive");
+            } else {
+                $container.find(".news").slideDown(); // Show all news items
+                $(".archive").text("– Hide archive");
+            }
+
+            // Toggle the state
+            isExpanded = !isExpanded;
+        });
+    });
+</script>
    </head>
    <body>
       <!-- Navbar -->
@@ -67,7 +69,7 @@
                <br>
                <h2 class="w3-wide w3-center">ABOUT</h2>
                <p class="w3-justify">
-                  Hi, I am Emma, an engineer and consultant specialized in music technology and accessibility. I use sound and data to create engaging and accessible user experiences. As a researcher with a PhD in Sound and Music Computing from <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>, I bring over 10 years of experience developing innovative audio and interactive technologies. In addition to consulting, I also assist with grant writing and hold workshops and seminars to share my knowledge. I have previously worked at institutions like <a href="https://www.ircam.fr/">IRCAM</a> and <a href="https://research.adobe.com/">Adobe</a> and consulted for companies looking to enhance user experience through research and data-driven sound design. To get in touch, please feel free to connect with me on <a href="https://www.linkedin.com/in/emmafrid">LinkedIn!</a>
+                  Hi, I am Emma, a research scientist consultant and engineer specialized in music technology and accessibility. I use sound and data to create engaging and accessible user experiences. As a researcher with a PhD in Sound and Music Computing from <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>, I bring over 10 years of experience developing innovative audio and interactive technologies. In addition to consulting, I also assist with grant writing and hold workshops and seminars to share my knowledge. I have previously worked at institutions like <a href="https://www.ircam.fr/">IRCAM</a> and <a href="https://research.adobe.com/">Adobe</a> and consulted for companies looking to enhance user experience through research and data-driven sound design. To get in touch, please feel free to connect with me on <a href="https://www.linkedin.com/in/emmafrid">LinkedIn!</a>
                <p>
             </div>
          </div>

@@ -12,33 +12,7 @@
          body {font-family: "Lato", sans-serif}
          .mySlides {display: none}
       </style>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script>
-    $(document).ready(function(){
-        var isExpanded = false;
-        
-        // Set initial text for the archive toggle
-        $(".archive").text("+ Show archive");
-        $(".news").hide(); // Initially hide all news items
-        
-        $(".archive").click(function (e) {
-            e.preventDefault(); // Prevent default anchor behavior
-            var $container = $(e.currentTarget).closest('.accordion-container');
-
-            // Toggle display based on current state
-            if (isExpanded) {
-                $container.find(".news").slideUp(); // Hide all news items
-                $(".archive").text("+ Show archive");
-            } else {
-                $container.find(".news").slideDown(); // Show all news items
-                $(".archive").text("– Hide archive");
-            }
-
-            // Toggle the state
-            isExpanded = !isExpanded;
-        });
-    });
-</script>
+      
    </head>
    <body>
       <!-- Navbar -->
@@ -64,13 +38,12 @@
          <!-- The home section -->
          <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-               <img src="emmafrid.jpg" class="w3-round" alt="Emma" width="50%" height="50%">
+               <h1 class="w3-wide w3-center">EMMA FRID</h1>  <!-- ADD THIS LINE -->
+               <img src="emmafrid.jpg" class="w3-round" alt="Emma Frid, with blond wavy hair, wearing a black and gold sweater, resting head on hand." width="50%" height="50%">
                <br>
                <br>
                <h2 class="w3-wide w3-center">ABOUT</h2>
-               <p class="w3-justify">
                   Hi, I am Emma, a research scientist consultant and engineer specialized in music technology and accessibility. I use sound and data to create engaging and accessible user experiences. As a researcher with a PhD in Sound and Music Computing from <a href="https://www.kth.se/">KTH Royal Institute of Technology</a>, I bring over 10 years of experience developing innovative audio and interactive technologies. In addition to consulting, I also assist with grant writing and hold workshops and seminars to share my knowledge. I have previously worked at institutions like <a href="https://www.ircam.fr/">IRCAM</a> and <a href="https://research.adobe.com/">Adobe</a> and consulted for companies looking to enhance user experience through research and data-driven sound design. To get in touch, please feel free to connect with me on <a href="https://www.linkedin.com/in/emmafrid">LinkedIn!</a>
-               <p>
             </div>
          </div>
          <!-- The portfolio section -->
@@ -148,6 +121,10 @@
                <!-- End expandable content -->
             </div>
          </div>
+         
+
+
+
          <!-- The news section -->
          <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="news">
             <h2 class="w3-wide w3-center">NEWS</h2>
@@ -155,284 +132,338 @@
                <!-- Start expandable content -->
                <div class="accordion-container"> 
                   <div class="title">
-                     <table>
-                        <col width="30%">
-                        <col width="70%">
-                        
-                        <tr>
-                           <td>[2024-10-24]</td>
-                           <td>We are running a workshop on music and AI in retail (<i>"Generative AI - the final solution to in-store music, or overengineering that scares customers?"</i>) at the NRWC2024 Conference (November 6th, 16.00-17.00). For more info, please see the <a href="https://nrwa.se/nrwc-2024/">conference webpage</a>.  
-                           </td>
-                        </tr>
-                        <tr>
+                     <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-10-24]</div>
+                       <div class="news-content">We are running a workshop on music and AI in retail (<i>"Generative AI - the final solution to in-store music, or overengineering that scares customers?"</i>) at the NRWC2024 Conference (November 6th, 16.00-17.00). For more info, please see the <a href="https://nrwa.se/nrwc-2024/">NRWC conference webpage</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-08-18]</div>
+                       <div class="news-content">We have received funding for the project <i>"The Soundscape of Retail: A Comparative Study of Sound Design and Music Strategies Across Industries"</i>!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-06-17]</div>
+                       <div class="news-content">I obtained a <a href="https://www.credly.com/badges/1ba3826e-24c3-42ec-8198-5c5e59f99b64/public_url">Google Advanced Data Analytics Certificate</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-03-20]</div>
+                       <div class="news-content">I am happy to announce that I am now a <a href="https://www.credly.com/badges/4d90fdb3-88c5-4364-a054-f285262ddd11/linked_in_profile"><i>CPACC Certified Professional in Accessibility Core Competencies</i></a>! With a total test score of 752 out of 800, I performed 'above standard' in all three categories (Disabilities, Challenges, and Assistive Technologies; Accessibility and Universal Design; Declarations, Standards, Laws, and Management Strategies).</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-02-08]</div>
+                       <div class="news-content">The e-book for our Special Issue <i><a href="https://www.frontiersin.org/research-topics/41604/new-advances-and-novel-applications-of-music-technologies-for-health-well-being-and-inclusion">"New Advances and Novel Applications of Music Technologies for Health, Well-being, and Inclusion" </i></a>is now out!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-01-24]</div>
+                       <div class="news-content">The editorial for our Special Issue <i>"New Advances and Novel Applications of Music Technologies for Health, Well-being, and Inclusion"</i> is out, along with 9 interesting papers! More info can be found on the <a href="https://www.frontiersin.org/articles/10.3389/fcomp.2024.1358454/full">Frontiers website</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2024-01-24]</div>
+                       <div class="news-content">My chapter <i>"Musical Robots: Overview and Methods for Evaluation"</i> is now published in the book <i>Sound and Robotics</i> (editor: Richard Savery). Visit the <a href="https://soundandrobotics.com/docs/ch12">Musical Robots companion website</a> for sound and video examples. Learn more about the book on the <a href="https://www.routledge.com/Sound-and-Robotics-Speech-Non-Verbal-Audio-and-Robotic-Musicianship/Savery/p/book/9781032340838">Routledge publisher website</a>.</div>
+                    </div>
+                 </div>
 
-                        <tr>
-                           <td>[2024-08-18]</td>
-                           <td>We have received funding for the project <i>"The Soundscape of Retail: A Comparative Study of Sound Design and Music Strategies Across Industries"</i>! 
-                           </td>
-                        </tr>
-                        <tr>
+                 <div class="news">
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-10-20]</div>
+                       <div class="news-content">Our paper <i>"Perspectives on Musical Care Throughout the Life Course: Introducing the Musical Care International Network"</i> is now <a href="https://doi.org/10.1177/20592043231200553">available in the journal Music and Science</a>.</div>
+                    </div>
+                 </div>
+                 
+                 <div class="news">
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-09-14]</div>
+                       <div class="news-content">Our paper <i>"Collaborative Music-Making: Special Educational Needs School Assistants as Facilitators in Performances with Accessible Digital Musical Instruments"</i> is now out! <a href="https://www.frontiersin.org/articles/10.3389/fcomp.2023.1165442/full">Read the full article in Frontiers in Computer Science</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-08-15]</div>
+                       <div class="news-content">New paper entitled <i>"Perspectives on Musical Care Throughout the Life Course: Introducing the Musical Care International Network"</i> accepted for publication in Music and Science.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-05-12]</div>
+                       <div class="news-content">We presented our work <i>"Collaborative music-making with Special Education Needs students and their assistants: A study on music playing among preverbal individuals with the Funki instruments"</i> at the Nordic Network on Disability Research (NNDR) conference.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-04-24]</div>
+                       <div class="news-content">We presented our paper <i>"Sharing Earthquake Narratives: Making Space for Others in our Autobiographical Design Process"</i> at the CHI2023 conference. Read the complete paper on the <a href="https://dl-acm-org.focus.lib.kth.se/doi/abs/10.1145/3544548.3580977">ACM Digital Library website</a> and watch the video on <a href="https://youtu.be/_a8FtOuEaIk">Youtube</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-04-19]</div>
+                       <div class="news-content">Our extended abstract <i>"A Dual-Task Experimental Methodology for Exploration of Saliency of Auditory Notifications in a Retail Soundscape"</i> was accepted for the International Conference on Auditory Display (ICAD2023)! More info can be found on the <a href="https://icad2023.icad.org/program/">ICAD webpage</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-02-02]</div>
+                       <div class="news-content">Our paper <i>"SuperOM: a SuperCollider Class to Generate Music Scores in OpenMusic"</i> was accepted for the International Conference on Technologies for Music Notation and Representation (TENOR) conference!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2023-01-08]</div>
+                       <div class="news-content">I will be Workshop Chair for ICAD2023. <a href="https://icad2023.icad.org/cfp">Check out the published Call for Submissions</a>!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-10-02]</div>
+                       <div class="news-content">Our paper <i>"Haptic Music Players for Children with Profound and Multiple Learning Disabilities (PMLD) — Exploring Different Modes of Interaction for Felt Sound"</i> was accepted for the International Congress on Acoustics (ICA2022)! The work will be part of the session <i>"Multi-modal solutions to enhance hearing"</i>. More info can be found on the <a href="https://ica2022korea.org/sub04_01.php">ICA2022 website</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-09-23]</div>
+                       <div class="news-content">I gave a talk on <i>"Accessible Music Technology in Research"</i> at the <a href="https://accessiblemusic.tech/events/2022">Accessible Music Technology Conference</a>. All recordings from the event will be made available soon!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-07-27]</div>
+                       <div class="news-content">Our paper <i>"Customizing and Evaluating Accessible Multisensory Music Experiences with Pre-Verbal Children—A Case Study on the Perception of Musical Haptics Using Participatory Design with Proxies"</i> is now <a href="https://www.mdpi.com/2414-4088/6/7/55">published in Multimodal Technologies and Interaction</a>!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-06-14]</div>
+                       <div class="news-content">Our extended abstract titled <i>"Sounds and Satisfaction: A Novel Conceptualization of the Soundscape in Sales and Service Settings"</i> was just accepted for the 8th <i>Nordic Retail and Wholesale Conference (NRWC)</i>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-04-13]</div>
+                       <div class="news-content">Our project report <i>"Sonifiering av varor i butik: en pilotstudie om att minska stölder i detaljhandeln med hjälp av ljud och musik"</i> is now <a href="http://hss-ihf-prod.westeurope.cloudapp.azure.com/wp-content/uploads/2022/04/HakonSS-Sonifiering-av-varor-i-butik-1.pdf">available as a PDF download</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2022-01-26]</div>
+                       <div class="news-content">Our chapter <i>"Designing and Reporting Research on Sound Design and Music for Health - Methods and Frameworks for Impact"</i> is now published in <a href="https://www.routledge.com/Doing-Research-in-Sound-Design/Filimowicz/p/book/9780367404895"><i>Doing Research in Sound Design</i> (Routledge)</a>!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-12-16]</div>
+                       <div class="news-content">The ICMA ARRAY2021 on "Diversity, pluralism – equity?" is out! <a href="https://journals.qucosa.de/array/issue/view/272/251">View my article <i>"The Gender Gap and the Computer Music Narrative"</i> on the ARRAY journal website</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-11-24]</div>
+                       <div class="news-content">I gave a short talk on <i>"Accessible Musical Interactions for Novices"</i> at the <i>Mercredis de STMS</i> seminar. The seminar also included presentations from Emily Graber and Corentin Guichaoua. A recording of the entire seminar is available on <a href="https://youtu.be/6kUxa8g_SLU">Youtube</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-11-11]</div>
+                       <div class="news-content">We presented an extended abstract titled <i>"On Designing Sounds to Reduce Shoplifting in Retail Environments"</i> at the 7th <i>Nordic Retail and Wholesale Conference (NRWC)</i> 2021. More information about the project can be found on the <a href="https://www.kth.se/hct/mid/research/smc/projects/sweet-sounding-shop-goods-1.1022995">KTH project page</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-10-18]</div>
+                       <div class="news-content">I will be Project Guide and give a talk on <i>"Music Technology for Health"</i> at the 4th <i>Women in Music Information Retrieval Workshop (WiMIR)</i>, held on October 29, 20.00, GMT+2. More information can be found on the <a href="https://wimir.wordpress.com/2021/09/24/wimir-workshop-2021-project-guides/">WIMIR website</a>. The WiMIR workshop is a satellite event of the <a href="https://ismir2021.ismir.net/">ISMIR2021 conference</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-10-18]</div>
+                       <div class="news-content">I will be Paper Chair for <a href="https://nime2022.org/">NIME2022</a>, together with Andrew McPherson. <a href="https://nime2022.org/papers.html">The Call for Papers is now published on the NIME2022 website</a>!</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-09-20]</div>
+                       <div class="news-content">I was interviewed by <i>KTH Press</i> about my work on ADMIs and the collaboration with the Dibber Rullen School. <a href="https://www.kth.se/aktuellt/nyheter/musiken-for-alla-efter-behov-1.1101667">Read the interview on the KTH website</a> (in Swedish). An english version is published on the <a href="http://cosmos.ircam.fr/?p=3014">COSMOS blog</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-08-12]</div>
+                       <div class="news-content">I was intereviewed for the <i>Women Nordic Music Technology (WoNoMute)</i> interview series. WoNoMute is an organization that aims to promote and connect the work of women in music tech at local, national and international levels. <a href="https://wonomute.no/interviews/emma-frid/">Read my WoNoMute interview on their website</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-06-23]</div>
+                       <div class="news-content">We have two papers accepted for ICAD2021! The first one, <i>"Mapping Inter-Cardiovascular Time-Frequency Coherence to Harmonic Tension in Sonification of Ensemble Interaction Between a COVID-19 Patient and the Medical Team"</i> will be presented on June 26 at 6.30 PM Paris time (UTC+2). The second one, <i>"Auditory Notification of Customer Actions in a Virtual Retail Environment: Sound Design, Awareness and Attention"</i>, will be presentated on June 27 at 7.30 PM. The full ICAD program can be found <a href="https://icad2021.icad.org/program/">on the ICAD webpage</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-06-23]</div>
+                       <div class="news-content">Last week we presented our work <i>"Reimagining (Accessible) Digital Musical Instruments: A Survey on Electronic Music-Making Tools"</i> at NIME2021. <a href="http://nime2021.org/program/#/paper/94">Watch our NIME2021 presentation video</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-06-21]</div>
+                       <div class="news-content">I gave a short talk about Women in Sound and Music Computing at the event <a href="https://manifeste.ircam.fr/agenda/feminisme-musique-technologie/detail/"><i>"Féminisme — Musique — Technologie"</i></a>, which was part of <a href="https://manifeste.ircam.fr/"><i>IRCAM Manifeste</i></a>. The video from the event is available on <a href="https://www.youtube.com/watch?v=jXmNvd9ty_o&ab_channel=ircam-ismm">Youtube</a>. My presentation starts after ~39 minutes.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-06-07]</div>
+                       <div class="news-content">Our paper <i>"Perceptual Evaluation of Blended Sonification of Mechanical Robot Sounds Produced by Emotionally Expressive Gestures: Augmenting Consequential Sounds to Improve Non-verbal Robot Communication"</i> is now <a href="https://link.springer.com/article/10.1007/s12369-021-00788-4">published in the International Journal of Social Robotics</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-05-09]</div>
+                       <div class="news-content">On May 6 the European Research Council celebrated 10 000 grantees with an online ceremony, and the COSMOS project was selected as one of fifteen stories to be featured on how the ERC transformed science! More information can be found on the <a href="http://cosmos.ircam.fr/?p=2572">COSMOS website</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-04-27]</div>
+                       <div class="news-content">Our work <i>"Reimagining (Accessible) Digital Musical Instruments: A Survey on Electronic Music-Making Tools"</i> was accepted as full paper at NIME2021 and can now be found on <a href="https://nime.pubpub.org/pub/reimaginingadmis/draft?access=evye1dk8">PubPub</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-04-27]</div>
+                       <div class="news-content">Our paper titled <i>"Perceptual Evaluation of Blended Sonification of Mechanical Robot Sounds Produced by Emotionally Expressive Gestures: Augmenting Consequential Sounds to Improve Non-verbal Robot Communication"</i> has been accepted for publication in the International Journal of Social Robotics (SORO).</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-03-22]</div>
+                       <div class="news-content">I will give a short introduction to ADMIs at <i>"Interact@CIRMMT - Fostering Inclusion in Music: Perspectives from Practitioners and Researchers in Music Therapy and Technology"</i> on March 30 at 5.30 PM EDT/10.30 CET (online). For more info, see the <a href="https://www.cirmmt.org/activities/interact-cirmmt/fostering-inclusion">CIRMMT</a> or <a href="http://www-new.idmil.org/project/fostering-inclusion-in-music/">IDMIL</a> webpage or <a href="https://fb.me/e/1ABvTfn64">this FB event</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2021-03-08]</div>
+                       <div class="news-content">We are presenting our work <i>"Robust Non-Verbal Expression in Humanoid Robots: New Methods for Augmenting Expressive Movements with Sound"</i> at the <i>Sound in Human-Robot Interaction Workshop</i>, held at the <a href="https://humanrobotinteraction.org/2021/">16th Annual Conference for Basic and Applied Human-Robot Interaction Research (HRI)</a>, on 12 March 2021 - 12:30-16:30 MST. <a href="https://cfba2c29-c218-44e0-97fb-7c1ec241ca3d.filesusr.com/ugd/c61d75_67f1434a1967444e9ef9c7ff33fcb711.pdf">Download our workshop abstract (PDF)</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-11-30]</div>
+                       <div class="news-content">New article about the project <i>"Välklingande butiksvaror"</i> published in <a href="https://handelsnytt.se/2020/11/25/kan-musik-satta-stopp-for-butiksstolder/">Handelsnytt</a> (in Swedish).</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-11-30]</div>
+                       <div class="news-content">New paper on <i>"Creating Digital Musical Instruments with and for Children: Including Vocal Sketching as a Method for Engaging in Codesign"</i> published in <a href="https://humantechnology.jyu.fi/archive/vol-16/issue-3/falkenberg_lindetorp_latupeirissa_frid">Human Technologies, Special Issue on Music, Mind and Technology — Exploring the Embodied Musical Experience</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-11-06]</div>
+                       <div class="news-content">Announcement of funding from <i>Handelsrådet/The Swedish Retail and Wholesale Council</i> for the project <a href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/forskning-relevant-for-handelsnaringen-2020/valklingande-butiksvaror/"><i>"Välklingande butiksvaror"</i></a> (in Swedish).</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-10-01]</div>
+                       <div class="news-content">I have been awarded an <i>International Postdoctoral Grant</i> from <i>Vetenskapsrådet/the Swedish Research Council</i> to conduct research to advance musical frontiers for people with disabilities through multimodal feedback and artificial intelligence. The research will be conducted at <a href="https://www.stms-lab.fr/">the STMS Laboratory</a> at <a href="https://www.ircam.fr/">IRCAM</a>, where I will be hosted by the <a href="http://cosmos.ircam.fr/?p=1848">COSMOS</a> project.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-08-31]</div>
+                       <div class="news-content">My Adobe CHI2020 presentation <i>"Music Creation by Example"</i> is now available <a href="https://research.adobe.com/conferences_series/music-creation-by-example/">online</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-06-21]</div>
+                       <div class="news-content">The Sound and Music Computing conference (SMC2020) will be live streamed on June 24-26 on the <a href="https://www.youtube.com/channel/UCfmolORlQswe4F6d3lr_yvQ">SMC2020 YouTube channel</a>. Our paper <a href="https://smc2020torino.it/adminupload/file/SMCCIM_2020_paper_57.pdf"><i>"Haptic Music — Exploring Whole-Body Vibrations and Tactile Sound for a Multisensory Music Installation"</i></a> will be presented on June 24 at 6.15-7.30 CEST. The presentation can also be found on <a href="https://youtu.be/fZr2ZlEeQxg">Youtube</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-06-20]</div>
+                       <div class="news-content">I will give a talk on <i>"The Future of Inclusive Sonic Interaction Design"</i> at the <a href="https://www.bmw-welt.com/en/experience/popups/exhibition_welt/FF-resonances.html"><i>BMW Welt Future Forum: Resonances. Soundscapes of Electrification.</i></a> on June 23rd (7-8.15PM CEST). It will be live streamed from <a href="https://www.facebook.com/bmw.welt/?ref=aymt_homepage_panel&eid=ARCj8aVrF9a2QCxFa9awAEDF59L2oa2PVlFS3MM_Lpjzk5we9wZEd76H9NRL84CXx6CcBe6W75RZOY3L">Facebook</a>. The event will focus on insights into the sounds of tomorrow, featuring Renzo Vitale and guests such as Carsten Nicolai (Alva Noto) and André Fiebig.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-06-20]</div>
+                       <div class="news-content">Our paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S1071581920301026?via%3Dihub"><i>"Sonification of the Self vs. Sonification of the Other: Differences in the Sonification of Performed vs. Observed Simple Hand Movements" </i></a>is now available online.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-06-18]</div>
+                       <div class="news-content">Due to covid-19, <a href="http://www.zhb.tu-dortmund.de/zhb/wb/de/home/Kongresse/Europa-InTakt-2020/index.html"><i>Europa InTakt </i></a> will be held in 2021. More details to come.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-06-18]</div>
+                       <div class="news-content">CHI 2020 Remote Presentations are now available from the SIGCHI Youtube Channel. <a href="https://www.youtube.com/watch?v=0zEo7nZSoKQ">Watch our "Music Creation by Example" presentation video</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-05-21]</div>
+                       <div class="news-content">Join us on Thursday May 21 9 AM PT/12 ET/18 CET for a Virtual #CHI2020 #chi2020music session on <i>Music and Sound Experiences</i> with authors from Northwestern, Google Research, University of Padova, KTH, Adobe Research, CU Boulder and Spotify. <a href="http://tinyurl.com/chi2020-music-sound">RSVP for the CHI2020 Music and Sound session</a>.</div>
+                    </div>
+                    
+                    <!-- News item -->
+                    <div class="news-item">
+                       <div class="news-date">[2020-05-11]</div>
+                       <div class="news-content">Our paper <i>"Haptic Music — Exploring Whole-Body Vibrations and Tactile Sound for a Multisensory Music Installation" </i>has been accepted to the <a href="https://smc2020torino.it/uk/">SMC/CIM 2020 conference</a>.</div>
+                    </div>
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-04-16]</div>
+                        <div class="news-content"><a href="https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-emma-frid-till-arets-musikaliska-bernadottestipendium-1.975152">Read some updates about my <i>Bernadotte</i> project on the KTH website</a>.</div>
+                     </div>
 
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-04-06]</div>
+                        <div class="news-content">I have received a <i>Bernadotte</i> scholarship from The Royal Swedish Academy of Music (KMA). The grant is given to support an artistic and/or scientific project in the music field. The Bernadotte programme offers mentored enrichment and development opportunities at a postdoctoral level for researchers and younger artistic practitioners. For more info, see <a href="http://www.musakad.se/nyheter/nyheter/aretsbernadottestipendiaterutsedda.2705.html">the KMA webpage</a>.</div>
+                     </div>
 
-                           <td>[2024-06-17]</td>
-                           <td>I obtained a <a href="https://www.credly.com/badges/1ba3826e-24c3-42ec-8198-5c5e59f99b64/public_url">Google Advanced Data Analytics Certificate</a>. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2024-03-20]</td>
-                           <td>I am happy to announce that I am now a <a href="https://www.credly.com/badges/4d90fdb3-88c5-4364-a054-f285262ddd11/linked_in_profile"><i>CPACC Certified Professional in Accessibility Core Competencies</i></a>! With a total test score of 752 out of 800, I performed 'above standard' in all three categories (Disabilities, Challenges, and Assistive Technologies; Accessibility and Universal Design; Declarations, Standards, Laws, and Management Strategies). 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2024-02-08]</td>
-                           <td>The <a href="https://www.frontiersin.org/research-topics/41604/new-advances-and-novel-applications-of-music-technologies-for-health-well-being-and-inclusion">e-book</a> for our Special Issue <i>"New Advances and Novel Applications of Music Technologies for Health, Well-being, and Inclusion" </i>is now out!          
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2024-01-24]</td>
-                           <td>The editorial for our Special Issue <i>"New Advances and Novel Applications of Music Technologies for Health, Well-being, and Inclusion"</i> is out, along with 9 interesting papers! More info can be found <a href="https://www.frontiersin.org/articles/10.3389/fcomp.2024.1358454/full">here</a>.         
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2024-01-24]</td>
-                           <td>My chapter <i>"Musical Robots: Overview and Methods for Evaluation"</i> is now published in the book <i>Sound and Robotics</i> (editor: Richard Savery). An accompanying website with sound and video examples is available from <a href="https://soundandrobotics.com/docs/ch12">here</a>. For more information about the book, please click <a href="https://www.routledge.com/Sound-and-Robotics-Speech-Non-Verbal-Audio-and-Robotic-Musicianship/Savery/p/book/9781032340838">here</a>.         
-                           </td>
-                        </tr>
-                     </table>
-                  </div>
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-04-01]</div>
+                        <div class="news-content">I will hold a lecture on <i>"Accessible Digital Musical Instruments: Musical Interfaces in Inclusive Music Practice"</i> at <a href="http://www.zhb.tu-dortmund.de/zhb/wb/de/home/Kongresse/Europa-InTakt-2020/index.html">Europa InTakt 2020</a>.</div>
+                     </div>
 
-                  <div class="news">
-                     <table>
-                        <col width="30%">
-                        <col width="70%">
-                        <tr>
-                           <td>[2023-10-20]</td>
-                           <td>Our paper <i>"Perspectives on Musical Care Throughout the Life Course: Introducing the Musical Care International Network"</i> can be found <a href="https://doi.org/10.1177/20592043231200553">here</a>.        
-                           </td>
-                        </tr>
-                     </table>
-                  </div>
-                  <div class="news">
-                     <table>
-                        <col width="30%">
-                        <col width="70%">
-                        <tr>
-                           <td>[2023-09-14]</td>
-                           <td>Our paper <i>"Collaborative Music-Making: Special Educational Needs School Assistants as Facilitators in Performances with Accessible Digital Musical Instruments"</i> is now out! It can be found <a href="https://www.frontiersin.org/articles/10.3389/fcomp.2023.1165442/full">here</a>.        
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2023-08-15]</td>
-                           <td>New paper entitled <i>"Perspectives on Musical Care Throughout the Life Course: Introducing the Musical Care International Network"</i> accepted for publication in Music and Science.         
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2023-05-12]</td>
-                           <td>We presented our work <i>"Collaborative music-making with Special Education Needs students and their assistants: A study on music playing among preverbal individuals with the Funki instruments"</i> at the Nordic Network on Disability Research (NNDR) conference.
-                        </tr>
-                        <tr>
-                           <td>[2023-04-24]</td>
-                           <td>We presented our paper <i>"Sharing Earthquake Narratives: Making Space for Others in our Autobiographical Design Process"</i> at the CHI2023 conference. The paper can be downloaded from <a href="https://dl-acm-org.focus.lib.kth.se/doi/abs/10.1145/3544548.3580977">here</a> and the video is available on <a href="https://youtu.be/_a8FtOuEaIk">Youtube</a>.       
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2023-04-19]</td>
-                           <td>Our extended abstract <i>"A Dual-Task Experimental Methodology for Exploration of Saliency of Auditory Notifications in a Retail Soundscape"</i> was accepted for the International Conference on Auditory Display (ICAD2023)! More info can be found <a href="https://icad2023.icad.org/program/">here</a>.       
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2023-02-02]</td>
-                           <td>Our paper <i>"SuperOM: a SuperCollider Class to Generate Music Scores in OpenMusic"</i> was accepted for the International Conference on Technologies for Music Notation and Representation (TENOR) conference!        
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2023-01-08]</td>
-                           <td>I will be Workshop Chair for ICAD2023. The call is now published! You can find it <a href="https://icad2023.icad.org/cfp">here</a>.        
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-10-02]</td>
-                           <td>Our paper <i>"Haptic Music Players for Children with Profound and Multiple Learning Disabilities (PMLD) — Exploring Different Modes of Interaction for Felt Sound"</i> was accepted for the International Congress on Acoustics (ICA2022)! The work will be part of the session <i>"Multi-modal solutions to enhance hearing"</i>. More info can be found <a href="https://ica2022korea.org/sub04_01.php">here</a>.        
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-09-23]</td>
-                           <td>I gave a talk on <i>"Accessible Music Technology in Research"</i> at the <a href="https://accessiblemusic.tech/events/2022">Accessible Music Technology Conference</a>. All recordings from the event will be made available soon!       
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-07-27]</td>
-                           <td>Our paper <i>"Customizing and Evaluating Accessible Multisensory Music Experiences with Pre-Verbal Children—A Case Study on the Perception of Musical Haptics Using Participatory Design with Proxies"</i> is now out! It can be found <a href="https://www.mdpi.com/2414-4088/6/7/55">here</a>.         
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-06-14]</td>
-                           <td>Our extended abstract titled <i>"Sounds and Satisfaction: A Novel Conceptualization of the Soundscape in Sales and Service Settings"</i> was just accepted for the 8th <i>Nordic Retail and Wholesale Conference (NRWC)</i>. </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-04-13]</td>
-                           <td>The report for our project <i>"Sonifiering av varor i butik: en pilotstudie om att minska stölder i detaljhandeln med hjälp av ljud och musik"</i> is now available from <a href="http://hss-ihf-prod.westeurope.cloudapp.azure.com/wp-content/uploads/2022/04/HakonSS-Sonifiering-av-varor-i-butik-1.pdf">here</a>. </td>
-                        </tr>
-                        <tr>
-                           <td>[2022-01-26]</td>
-                           <td>Our chapter <i>"Designing and Reporting Research on Sound Design and Music for Health - Methods and Frameworks for Impact"</i> for the book <i>Doing Research in Sound Design</i> is now published! The book can be accessed from <a href="https://www.routledge.com/Doing-Research-in-Sound-Design/Filimowicz/p/book/9780367404895">here.</a></td>
-                        </tr>
-                        <tr>
-                           <td>[2021-12-16]</td>
-                           <td>The ICMA ARRAY2021 on "Diversity, pluralism – equity?" is out! My work <i>"The Gender Gap and the Computer Music Narrative - On the Under-Representation of Women at Computer Music Conferences"</i> can be found <a href="https://journals.qucosa.de/array/issue/view/272/251">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-11-24]</td>
-                           <td>I gave a short talk on <i>"Accessible Musical Interactions for Novices"</i> at the <i>Mercredis de STMS</i> seminar. The seminar also included presentations from Emily Graber and Corentin Guichaoua. A recording of the entire seminar is available on <a href="https://youtu.be/6kUxa8g_SLU">Youtube</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-11-11]</td>
-                           <td>We presented an extended abstract titled <i>"On Designing Sounds to Reduce Shoplifting in Retail Environments"</i> at the 7th <i>Nordic Retail and Wholesale Conference (NRWC)</i> 2021. More information about the project can be found <a href="https://www.kth.se/hct/mid/research/smc/projects/sweet-sounding-shop-goods-1.1022995">here</a>. </td>
-                        </tr>
-                        <tr>
-                           <td>[2021-10-18]</td>
-                           <td>I will be Project Guide and give a talk on <i>"Music Technology for Health"</i> at the 4th <i>Women in Music Information Retrieval Workshop (WiMIR)</i>, held on October 29, 20.00, GMT+2. More information can be found <a href="https://wimir.wordpress.com/2021/09/24/wimir-workshop-2021-project-guides/">here</a>. The WiMIR workshop is a satellite event of the <a href="https://ismir2021.ismir.net/">ISMIR2021</a> conference.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-10-18]</td>
-                           <td>I will be Paper Chair for <a href="https://nime2022.org/">NIME2022</a>, together with Andrew McPherson. The Call for Papers is now published! You can find it <a href="https://nime2022.org/papers.html">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-09-20]</td>
-                           <td>I was interviewed by <i>KTH Press</i> about my work on ADMIs and the collaboration with the Dibber Rullen School. The interview is available <a href="https://www.kth.se/aktuellt/nyheter/musiken-for-alla-efter-behov-1.1101667">here</a> (in Swedish). An english version is published on the <a href="http://cosmos.ircam.fr/?p=3014">COSMOS blog</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-08-12]</td>
-                           <td>I was intereviewed for the <i>Women Nordic Music Technology (WoNoMute)</i> interview series. WoNoMute is an organization that aims to promote and connect the work of women in music tech at local, national and international levels. The interview can be found <a href="https://wonomute.no/interviews/emma-frid/">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-06-23]</td>
-                           <td>We have two papers accepted for ICAD2021! The first one, <i>"Mapping Inter-Cardiovascular Time-Frequency Coherence to Harmonic Tension in Sonification of Ensemble Interaction Between a COVID-19 Patient and the Medical Team"</i> will be presented on June 26 at 6.30 PM Paris time (UTC+2). The second one, <i>"Auditory Notification of Customer Actions in a Virtual Retail Environment: Sound Design, Awareness and Attention"</i>, will be presentated on June 27 at 7.30 PM. The full ICAD program can be found <a href="https://icad2021.icad.org/program/">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-06-23]</td>
-                           <td>Last week we presented our work <i>"Reimagining (Accessible) Digital Musical Instruments: A Survey on Electronic Music-Making Tools"</i> at NIME2021. The video presentation can be found <a href="http://nime2021.org/program/#/paper/94">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-06-21]</td>
-                           <td>I gave a short talk about Women in Sound and Music Computing at the event <a href="https://manifeste.ircam.fr/agenda/feminisme-musique-technologie/detail/"><i>"Féminisme — Musique — Technologie"</i></a>, which was part of <a href="https://manifeste.ircam.fr/"><i>IRCAM Manifeste</i></a>. The video from the event is available on <a href="https://www.youtube.com/watch?v=jXmNvd9ty_o&ab_channel=ircam-ismm">Youtube</a>. My presentation starts after ~39 minutes.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-06-07]</td>
-                           <td>Our paper <i>"Perceptual Evaluation of Blended Sonification of Mechanical Robot Sounds Produced by Emotionally Expressive Gestures: Augmenting Consequential Sounds to Improve Non-verbal Robot Communication"</i> can be found <a href="https://link.springer.com/article/10.1007/s12369-021-00788-4">here</a>.         
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2021-05-09]</td>
-                           <td>On May 6 the European Research Council celebrated 10 000 grantees with an online ceremony, and the COSMOS project was selected as one of fifteen stories to be featured on how the ERC transformed science! 
-                              More information can be found <a href="http://cosmos.ircam.fr/?p=2572">here</a>.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2021-04-27]</td>
-                           <td>Our work <i>"Reimagining (Accessible) Digital Musical Instruments: A Survey on Electronic Music-Making Tools"</i> was accepted as full paper at NIME2021 and can now be found <a href="https://nime.pubpub.org/pub/reimaginingadmis/draft?access=evye1dk8">here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2021-04-27]</td>
-                           <td>Our paper titled <i>"Perceptual Evaluation of Blended Sonification of Mechanical Robot Sounds Produced by Emotionally Expressive Gestures: Augmenting Consequential Sounds to Improve Non-verbal Robot Communication"</i> has been accepted for publication in the International Journal of Social Robotics (SORO).         
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2021-03-22]</td>
-                           <td>I will give a short introduction to ADMIs at <i>"Interact@CIRMMT - Fostering Inclusion in Music: Perspectives from Practitioners and Researchers in Music Therapy and Technology"</i> on March 30 at 5.30 PM EDT/10.30 CET (online). For more info, see the <a href="https://www.cirmmt.org/activities/interact-cirmmt/fostering-inclusion">CIRMMT</a> or <a href="http://www-new.idmil.org/project/fostering-inclusion-in-music/">IDMIL</a> webpage or this <a href="https://fb.me/e/1ABvTfn64">FB event</a>.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2021-03-08]</td>
-                           <td>We are presenting our work <i>"Robust Non-Verbal Expression in Humanoid Robots: New Methods for Augmenting Expressive Movements with Sound"</i> at the <i>Sound in Human-Robot Interaction Workshop</i>, held at the <a href="https://humanrobotinteraction.org/2021/">16th Annual Conference for Basic and Applied Human-Robot Interaction Research (HRI)</a>, on 12 March 2021 - 12:30-16:30 MST. Our abstract can be downloaded from <a href="https://cfba2c29-c218-44e0-97fb-7c1ec241ca3d.filesusr.com/ugd/c61d75_67f1434a1967444e9ef9c7ff33fcb711.pdf">here</a>.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-11-30]</td>
-                           <td>New article about the project <i>"Välklingande butiksvaror"</i> published in <a href="https://handelsnytt.se/2020/11/25/kan-musik-satta-stopp-for-butiksstolder/">Handelsnytt</a> (in Swedish).    
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-11-30]</td>
-                           <td>New paper on <i>"Creating Digital Musical Instruments with and for Children: Including Vocal Sketching as a Method for Engaging in Codesign"</i> published in <a href="https://humantechnology.jyu.fi/archive/vol-16/issue-3/falkenberg_lindetorp_latupeirissa_frid">Human Technologies, Special Issue on Music, Mind and Technology — Exploring the Embodied Musical Experience</a>.    
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-11-06]</td>
-                           <td>Announcement of funding from <i>Handelsrådet/The Swedish Retail and Wholesale Council</i> for the project <a href="https://handelsradet.se/forskning-och-utveckling/forskningsprojekt/forskning-relevant-for-handelsnaringen-2020/valklingande-butiksvaror/"><i>"Välklingande butiksvaror"</i></a> (in Swedish).    
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-10-01]</td>
-                           <td>I have been awarded an <i>International Postdoctoral Grant</i> from <i>Vetenskapsrådet/the Swedish Research Council</i> to conduct research to advance musical frontiers for people with disabilities through multimodal feedback and artificial intelligence. The research will be conducted at <a href="https://www.stms-lab.fr/">the STMS Laboratory</a> at <a href="https://www.ircam.fr/">IRCAM</a>, where I will be hosted by the <a href="http://cosmos.ircam.fr/?p=1848">COSMOS</a> project.    
-                           </td>
-                        </tr>
-                        <tr> 
-                        <tr>
-                           <td>[2020-08-31]</td>
-                           <td>My Adobe CHI2020 presentation <i>"Music Creation by Example"</i> is now available <a href="https://research.adobe.com/conferences_series/music-creation-by-example/">online</a>.    
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-06-21]</td>
-                           <td>The Sound and Music Computing conference (SMC2020) will be live streamed on June 24-26 on the <a href="https://www.youtube.com/channel/UCfmolORlQswe4F6d3lr_yvQ">SMC2020 YouTube channel</a>. Our paper <a href="https://smc2020torino.it/adminupload/file/SMCCIM_2020_paper_57.pdf"><i>“Haptic Music — Exploring Whole-Body Vibrations and Tactile Sound for a Multisensory Music Installation”</i></a> will be presented on June 24 at 6.15-7.30 CEST. The presentation can also be found <a href="https://youtu.be/fZr2ZlEeQxg">here</a>.    
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-06-20]</td>
-                           <td>I will give a talk on <i>"The Future of Inclusive Sonic Interaction Design"</i> at the <a href="https://www.bmw-welt.com/en/experience/popups/exhibition_welt/FF-resonances.html"><i>BMW Welt Future Forum: Resonances. Soundscapes of Electrification.</i></a> on June 23rd (7-8.15PM CEST). It will be live streamed from <a href="https://www.facebook.com/bmw.welt/?ref=aymt_homepage_panel&eid=ARCj8aVrF9a2QCxFa9awAEDF59L2oa2PVlFS3MM_Lpjzk5we9wZEd76H9NRL84CXx6CcBe6W75RZOY3L">here</a>. The event will focus on insights into the sounds of tomorrow, featuring Renzo Vitale and guests such as Carsten Nicolai (Alva Noto) and André Fiebig. 
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-06-20]</td>
-                           <td>Our paper <a href="https://www.sciencedirect.com/science/article/abs/pii/S1071581920301026?via%3Dihub"><i>"Sonification of the Self vs. Sonification of the Other: Differences in the Sonification of Performed vs. Observed Simple Hand Movements" </i></a>is now available online.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-06-18]</td>
-                           <td>Due to covid-19, <a href="http://www.zhb.tu-dortmund.de/zhb/wb/de/home/Kongresse/Europa-InTakt-2020/index.html"><i>Europa InTakt </i></a> will be held in 2021. More details to come.</td>
-                        </tr>
-                        <tr>
-                           <td>[2020-06-18]</td>
-                           <td> CHI 2020 Remote Presentations are now available from the SIGCHI Youtube Channel. Our paper presentation <i>"Music Creation by Example"</i> can be found <a href="https://www.youtube.com/watch?v=0zEo7nZSoKQ">here</a>.</td>
-                        </tr>
-                        <tr>      
-                        <tr>
-                           <td>[2020-05-21]</td>
-                           <td> Join us on Thursday May 21 9 AM PT/12 ET/18 CET for a Virtual #CHI2020 #chi2020music session on <i>Music and Sound Experiences</i> with authors from Northwestern, 
-                              Google Research, University of Padova, KTH, Adobe Research, CU Boulder and Spotify. <a href="http://tinyurl.com/chi2020-music-sound">RSVP here</a>.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-05-11]</td>
-                           <td>Our paper <i>"Haptic Music — Exploring Whole-Body Vibrations and Tactile Sound for a Multisensory Music Installation" </i>has been accepted to the <a href="https://smc2020torino.it/uk/">SMC/CIM 2020 conference</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2020-04-16]</td>
-                           <td>Some updates on my <i>Bernadotte</i> project <a href="https://intra.kth.se/en/eecs/aktuellt-pa-eecs/nyheter/grattis-emma-frid-till-arets-musikaliska-bernadottestipendium-1.975152">can be found here</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2020-04-06]</td>
-                           <td>I have received a <i>Bernadotte</i> scholarship from The Royal Swedish Academy of Music (KMA). The grant is given to support an artistic and/or scientific project in the music field. The Bernadotte programme offers mentored enrichment and development opportunities at a postdoctoral level for researchers and younger artistic practitioners. For more info, see <a href="http://www.musakad.se/nyheter/nyheter/aretsbernadottestipendiaterutsedda.2705.html"> the KMA webpage</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2020-04-01]</td>
-                           <td>I will hold a lecture on <i>"Accessible Digital Musical Instruments: Musical Interfaces in Inclusive Music Practice"</i> at <a href="http://www.zhb.tu-dortmund.de/zhb/wb/de/home/Kongresse/Europa-InTakt-2020/index.html">Europa InTakt 2020</a>.
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>[2020-04-01]</td>
-                           <td>Our workshop <i>"One Switch to Rule Them All — Hacking Access Switches and Exploring Issues in Inclusive Music Making"</i> has been accepted for NIME2020. As a consequence of the spread of COVID-19, NIME 2020 will be held online. For updates, please see the <a href="https://nime2020.bcu.ac.uk/">NIME2020 webpage</a>.</td>
-                        </tr>
-                        <tr>
-                           <td>[2020-03-26]</td>
-                           <td>Due to COVID-19, CHI2020 has been cancelled. The proceedings will still be published on April 25th, please see the <a href="https://chi2020.acm.org/">CHI2020 webpage</a>.
-                           </td>
-                        <tr>
-                           <td>[2020-03-06]</td>
-                           <td>I will present my paper <i>"Music Creation by Example"</i> (Frid, Jin and Gomes, 2020) at CHI2020, Honolulu, Hawaii. The presentation is scheduled for the paper session titled <i>"Music & Sound Experiences"</i> which takes place on Tuesday, April 28 between 16:00-17.15. For the full program, please refer to the <a href="https://programs.sigchi.org/chi/2020/program">CHI2020 webpage</a>.</td>
-                        </tr>
-                     </table>
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-04-01]</div>
+                        <div class="news-content">Our workshop <i>"One Switch to Rule Them All — Hacking Access Switches and Exploring Issues in Inclusive Music Making"</i> has been accepted for NIME2020. As a consequence of the spread of COVID-19, NIME 2020 will be held online. For updates, please see the <a href="https://nime2020.bcu.ac.uk/">NIME2020 webpage</a>.</div>
+                     </div>
+
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-03-26]</div>
+                        <div class="news-content">Due to COVID-19, CHI2020 has been cancelled. The proceedings will still be published on April 25th, please see the <a href="https://chi2020.acm.org/">CHI2020 webpage</a>.</div>
+                     </div>
+
+                     <!-- News item -->
+                     <div class="news-item">
+                        <div class="news-date">[2020-03-06]</div>
+                        <div class="news-content">I will present my paper <i>"Music Creation by Example"</i> (Frid, Jin and Gomes, 2020) at CHI2020, Honolulu, Hawaii. The presentation is scheduled for the paper session titled <i>"Music & Sound Experiences"</i> which takes place on Tuesday, April 28 between 16:00-17.15. For the full program, please refer to the <a href="https://programs.sigchi.org/chi/2020/program">CHI2020 webpage</a>.</div>
+                     </div>
                   </div>
                   <a class="archive" href="#"></a>
                </div>
@@ -455,27 +486,31 @@
          </div>
          <!-- End Page Content -->
       </div>
-      <!-- Footer -->
+      <!-- Footer with visually hidden text for accessibility -->
       <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-         <a href="https://scholar.google.com/citations?user=0PvSz8cAAAAJ&hl=eng" class="fa fa-google w3-hover-opacity" style="text-decoration: none"></a>
-         <!-- <a href="https://www.linkedin.com/in/emmafrid" class="fa fa-linkedin w3-hover-opacity" style="text-decoration: none"></a>  -->
-         <a href="https://www.youtube.com/playlist?list=PLdmT_JtSFfHY8lDVxunzwW16l90mr695r" class="fa fa-youtube w3-hover-opacity" style="text-decoration: none"></a>
-         <!-- <a href="https://soundcloud.com/emmenru/" class="fa fa-soundcloud w3-hover-opacity" style="text-decoration: none"></a> -->
-         <a href="https://github.com/emmenru" class="fa fa-github w3-hover-opacity" style="text-decoration: none"></a>
-         <a href="https://emserpics.tumblr.com/" class="fa fa-tumblr w3-hover-opacity" style="text-decoration: none"></a>
-         <a href="https://www.last.fm/user/emmenru" class="fa fa-lastfm w3-hover-opacity" style="text-decoration: none"></a>
+         <a href="https://scholar.google.com/citations?user=0PvSz8cAAAAJ&hl=eng" class="w3-hover-opacity" style="text-decoration: none">
+            <i class="fa fa-google" aria-hidden="true"></i>
+            <span class="sr-only">Google Scholar profile</span>
+         </a>
+         <a href="https://www.youtube.com/playlist?list=PLdmT_JtSFfHY8lDVxunzwW16l90mr695r" class="w3-hover-opacity" style="text-decoration: none">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+            <span class="sr-only">YouTube playlist</span>
+         </a>
+         <a href="https://github.com/emmenru" class="w3-hover-opacity" style="text-decoration: none">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <span class="sr-only">GitHub profile</span>
+         </a>
+         <a href="https://emserpics.tumblr.com/" class="w3-hover-opacity" style="text-decoration: none">
+            <i class="fa fa-tumblr" aria-hidden="true"></i>
+            <span class="sr-only">Tumblr blog</span>
+         </a>
+         <a href="https://www.last.fm/user/emmenru" class="w3-hover-opacity" style="text-decoration: none">
+            <i class="fa fa-lastfm" aria-hidden="true"></i>
+            <span class="sr-only">Last.fm profile</span>
+         </a>
       </footer>
-      <!-- Script -->
-      <script>  
-         // to toggle the menu on small screens when clicking on the menu button
-         function myFunction() {
-             var x = document.getElementById("navDemo");
-             if (x.className.indexOf("w3-show") == -1) {
-                 x.className += " w3-show";
-             } else { 
-                 x.className = x.className.replace(" w3-show", "");
-             }
-         }
-      </script>
+   <!-- Link to external JavaScript file -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="scripts.js"></script>
    </body>
 </html>

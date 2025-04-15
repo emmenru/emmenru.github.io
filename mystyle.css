@@ -81,7 +81,7 @@ a {
 .social-link {
   display: inline-block;
   padding: 12px;  /* Creates padding around the icon */
-  margin: 5px;    /* Adds space between links */
+  margin: 0px;    /* Adds space between links */
   min-width: 44px; /* Minimum width */
   min-height: 44px; /* Minimum height */
   box-sizing: border-box;

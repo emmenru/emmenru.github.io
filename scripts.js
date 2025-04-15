@@ -1,37 +1,39 @@
 console.log("scripts.js loaded");
 
-$(document).ready(function(){
-    var isExpanded = false;
-    
-    // Set initial text for the archive toggle
-    $(".archive").text("+ Show archive");
-    $(".news").hide(); // Initially hide all news items
-    
+$(document).ready(function () {
+    // Initialize all accordion buttons
+    $(".archive").each(function () {
+        $(this).text("+ Show archive");
+        $(this).closest(".accordion-container").find(".news").hide();
+    });
+
     $(".archive").click(function (e) {
-        e.preventDefault(); // Prevent default anchor behavior
-        var $container = $(e.currentTarget).closest('.accordion-container');
+        e.preventDefault();
+        const $button = $(this);
+        const $container = $button.closest(".accordion-container");
+        const $newsItems = $container.find(".news");
 
-        // Toggle display based on current state
+        const isExpanded = $container.hasClass("expanded");
+
         if (isExpanded) {
-            $container.find(".news").slideUp(); // Hide all news items
-            $(".archive").text("+ Show archive");
+            $newsItems.fadeOut();
+            $button.text("+ Show archive");
+            $container.removeClass("expanded");
         } else {
-            $container.find(".news").slideDown(); // Show all news items
-            $(".archive").text("– Hide archive");
+            $newsItems.fadeIn();
+            $button.text("– Hide archive");
+            $container.addClass("expanded");
         }
-
-        // Toggle the state
-        isExpanded = !isExpanded;
     });
 });
 
 function myFunction() {
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
+    if (x.className.indexOf("w3-show") === -1) {
         x.className += " w3-show";
-        x.setAttribute("aria-hidden", "false"); // Make visible to screen readers when opened
-    } else { 
+        x.setAttribute("aria-hidden", "false");
+    } else {
         x.className = x.className.replace(" w3-show", "");
-        x.setAttribute("aria-hidden", "true"); // Hide from screen readers when closed
+        x.setAttribute("aria-hidden", "true");
     }
 }

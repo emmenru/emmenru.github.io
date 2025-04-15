@@ -21,28 +21,58 @@ a {
 
 /* Visually hidden text for screen readers */
 .sr-only {
-position: absolute;
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-white-space: nowrap;
-border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-/* News item layout */
+/* News item styles for accessibility */
 .news-item {
-display: flex;
-margin-bottom: 1em;
+  display: flex;
+  margin-bottom: 1em;
+  align-items: flex-start;
 }
+
 .news-date {
-width: 30%;
-padding-right: 1em;
-text-align: left;
+  width: 30%;
+  padding-right: 1em;
+  text-align: left;
 }
+
 .news-content {
-width: 70%;
-text-align: left;
+  width: 70%;
+  text-align: left !important; /* Force left alignment */
+}
+
+.news-content p {
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: left !important; /* Force left alignment */
+}
+
+.accordion-container .news ul:first-child {
+  margin-top: 0;
+}
+
+.accordion-container .title ul:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-container .news {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.archive {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: underline;
+  text-decoration: underline;
 }

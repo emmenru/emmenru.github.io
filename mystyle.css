@@ -76,3 +76,35 @@ a {
   text-decoration: underline;
   text-decoration: underline;
 }
+
+/* Social media links with improved touch targets */
+.social-link {
+  display: inline-block;
+  padding: 12px;  /* Creates padding around the icon */
+  margin: 5px;    /* Adds space between links */
+  min-width: 44px; /* Minimum width */
+  min-height: 44px; /* Minimum height */
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+/* Center the icons within the larger touch target */
+.social-link i {
+  font-size: 24px; /* Increase from the default size */
+  vertical-align: middle;
+}
+
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s ease;
+}

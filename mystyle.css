@@ -1,25 +1,38 @@
-table, td, th {
-  border: none;
-  vertical-align:top;
-  text-align: left;
+/* Base elements */
+body {
+  font-family: "Lato", sans-serif;
 }
 
+a {
+  -webkit-tap-highlight-color: rgb(127, 17, 224, 1);
+}
+
+a:focus, 
+button:focus, 
+.archive:focus {
+  outline: 2px solid #0078d7;
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
   border: none;
 }
 
+table, td, th {
+  border: none;
+  vertical-align: top;
+  text-align: left;
+}
+
 th {
   text-align: left;
 }
 
-/* Change to purple on click on mobile screen */
-a {
-  -webkit-tap-highlight-color: rgb(127, 17, 224, 1);
-}
-
-/* Visually hidden text for screen readers */
+/* Accessibility classes */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -32,7 +45,30 @@ a {
   border: 0;
 }
 
-/* News item styles for accessibility */
+/* Skip navigation link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  background: #000;
+  color: #fff;
+  z-index: 999999;
+  border: 2px solid #fff;
+}
+
+/* News and accordion components */
 .news-item {
   display: flex;
   margin-bottom: 1em;
@@ -56,6 +92,7 @@ a {
   text-align: left !important; /* Force left alignment */
 }
 
+/* Accordion containers */
 .accordion-container .news ul:first-child {
   margin-top: 0;
 }
@@ -69,21 +106,53 @@ a {
   padding-top: 0;
 }
 
+/* Archive button */
+/* Archive button */
 .archive {
   display: block;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-decoration: underline;
-  text-decoration: underline;
+  cursor: pointer;
+  color: inherit; /* Use the same color as regular text */
+  background: transparent;
+  border: none;
+  padding: 5px 10px;
+  font: inherit; /* Use the same font as the rest of the site */
+  width: 100%; /* Make it take up the full width for better centering */
 }
 
-/* Social media links with improved touch targets */
+.archive:hover {
+  color: #2196F3; /* Optional: add hover effect */
+}
+
+/* Remove the button appearance completely */
+.archive::-moz-focus-visible {
+  outline: none;
+}
+/* To hide one of the text elements based on state */
+.accordion-container:not(.expanded) .collapse-text,
+.accordion-container.expanded .expand-text {
+  display: none;
+}
+
+/* Date formatting */
+.bracketed-date::before {
+  content: "[";
+}
+
+.bracketed-date::after {
+  content: "]";
+}
+
+/* Social media links */
 .social-link {
   display: inline-block;
-  padding: 12px;  /* Creates padding around the icon */
-  margin: 0px;    /* Adds space between links */
-  min-width: 44px; /* Minimum width */
-  min-height: 44px; /* Minimum height */
+  padding: 12px;
+  margin: 0;
+  min-width: 44px;
+  min-height: 44px;
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
@@ -91,20 +160,47 @@ a {
   line-height: 20px;
 }
 
-/* Center the icons within the larger touch target */
 .social-link i {
-  font-size: 24px; /* Increase from the default size */
+  font-size: 24px;
   vertical-align: middle;
 }
 
-/* Skip navigation link */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #000;
-  color: white;
-  padding: 8px;
-  z-index: 100;
-  transition: top 0.3s ease;
+/* High contrast mode support */
+@media (forced-colors: active) {
+  /* Essential text and UI elements */
+  a, button, input, select, textarea {
+    forced-color-adjust: none;
+    color: ButtonText; /* Changed from LinkText */
+    background-color: Canvas;
+    border-color: ButtonText;
+  }
+  
+  /* Focus states */
+  a:focus, button:focus, .archive:focus {
+    outline: 2px solid ButtonText; /* Changed from #0078d7 */
+    outline-offset: 2px;
+    color: HighlightText;
+    background-color: Highlight;
+  }
+  
+  /* Allow images and SVG to adapt */
+  img, svg {
+    forced-color-adjust: auto;
+  }
+  
+  /* Ensure text is readable */
+  p, h1, h2, h3, h4, h5, h6, li {
+    color: CanvasText;
+  }
+  
+  /* Icon-based elements */
+  .fa {
+    forced-color-adjust: auto;
+  }
+  
+  /* Brackets in dates */
+  .bracketed-date::before, 
+  .bracketed-date::after {
+    color: CanvasText;
+  }
 }

@@ -1,4 +1,4 @@
-/* Base elements */
+  /* Base elements */
 body {
   font-family: "Lato", sans-serif;
 }
@@ -7,15 +7,15 @@ a {
   -webkit-tap-highlight-color: rgb(127, 17, 224, 1);
 }
 
-a:focus, 
-button:focus, 
+  a:focus,
+  button:focus,
 .archive:focus {
   outline: 2px solid #0078d7;
   outline-offset: 2px;
   text-decoration: underline;
 }
 
-/* Tables */
+  /* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -32,7 +32,7 @@ th {
   text-align: left;
 }
 
-/* Accessibility classes */
+  /* Accessibility classes */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -45,7 +45,7 @@ th {
   border: 0;
 }
 
-/* Skip navigation link */
+  /* Skip navigation link */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -68,7 +68,7 @@ th {
   border: 2px solid #fff;
 }
 
-/* News and accordion components */
+  /* News and accordion components */
 .news-item {
   display: flex;
   margin-bottom: 1em;
@@ -92,7 +92,7 @@ th {
   text-align: left !important; /* Force left alignment */
 }
 
-/* Accordion containers */
+  /* Accordion containers */
 .accordion-container .news ul:first-child {
   margin-top: 0;
 }
@@ -106,8 +106,8 @@ th {
   padding-top: 0;
 }
 
-/* Archive button */
-/* Archive button */
+  /* Archive button */
+  /* Archive button */
 .archive {
   display: block;
   text-align: center;
@@ -127,17 +127,17 @@ th {
   color: #2196F3; /* Optional: add hover effect */
 }
 
-/* Remove the button appearance completely */
+  /* Remove the button appearance completely */
 .archive::-moz-focus-visible {
   outline: none;
 }
-/* To hide one of the text elements based on state */
-.accordion-container:not(.expanded) .collapse-text,
+  /* To hide one of the text elements based on state */
+  .accordion-container:not(.expanded) .collapse-text,
 .accordion-container.expanded .expand-text {
   display: none;
 }
 
-/* Date formatting */
+  /* Date formatting */
 .bracketed-date::before {
   content: "[";
 }
@@ -146,7 +146,7 @@ th {
   content: "]";
 }
 
-/* Social media links */
+  /* Social media links */
 .social-link {
   display: inline-block;
   padding: 12px;
@@ -165,42 +165,42 @@ th {
   vertical-align: middle;
 }
 
-/* High contrast mode support */
+  /* High contrast mode support */
 @media (forced-colors: active) {
   /* Essential text and UI elements */
-  a, button, input, select, textarea {
-    forced-color-adjust: none;
-    color: ButtonText; /* Changed from LinkText */
-    background-color: Canvas;
-    border-color: ButtonText;
-  }
-  
+a, button, input, select, textarea {
+  forced-color-adjust: none;
+  color: ButtonText; /* Changed from LinkText */
+  background-color: Canvas;
+  border-color: ButtonText;
+}
+
   /* Focus states */
-  a:focus, button:focus, .archive:focus {
-    outline: 2px solid ButtonText; /* Changed from #0078d7 */
-    outline-offset: 2px;
-    color: HighlightText;
-    background-color: Highlight;
-  }
-  
+a:focus, button:focus, .archive:focus {
+  outline: 2px solid ButtonText; /* Changed from #0078d7 */
+  outline-offset: 2px;
+  color: HighlightText;
+  background-color: Highlight;
+}
+
   /* Allow images and SVG to adapt */
-  img, svg {
-    forced-color-adjust: auto;
-  }
-  
+img, svg {
+  forced-color-adjust: auto;
+}
+
   /* Ensure text is readable */
-  p, h1, h2, h3, h4, h5, h6, li {
-    color: CanvasText;
-  }
-  
+p, h1, h2, h3, h4, h5, h6, li {
+  color: CanvasText;
+}
+
   /* Icon-based elements */
-  .fa {
-    forced-color-adjust: auto;
-  }
-  
+.fa {
+  forced-color-adjust: auto;
+}
+
   /* Brackets in dates */
-  .bracketed-date::before, 
-  .bracketed-date::after {
-    color: CanvasText;
-  }
+  .bracketed-date::before,
+.bracketed-date::after {
+  color: CanvasText;
+}
 }

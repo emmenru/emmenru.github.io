@@ -25,25 +25,9 @@ Key accessibility implementations:
 - Proper heading hierarchy
 - Expandable content with appropriate ARIA attributes
 
-## External Libraries & Frameworks
-- [W3.CSS Framework](https://www.w3schools.com/w3css/) - Lightweight responsive CSS framework that provides layout and component styling
-- [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/) - Icon library for social media icons and UI elements
-- [Google Fonts (Lato)](https://fonts.google.com/specimen/Lato) - Typography enhancement
-- [jQuery 2.1.1](https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js) - Used for DOM manipulation and accordion functionality
+## Technical Implementation
+This website is built with HTML5, CSS3, and JavaScript, with custom CSS for accessibility enhancements and visual styling. The site is deployed using GitHub Pages with Jekyll, utilizing the minimal theme as specified in the `_config.yml` file. For styling and functionality, the site incorporates the W3.CSS framework for responsive layouts, Font Awesome 4.7.0 for icons, Google Fonts (Lato) for typography, and jQuery 2.1.1 for interactive elements like the expandable content sections.
 
-## Technologies
-- HTML5
-- CSS3
-- JavaScript
-- Custom CSS for accessibility enhancements and visual styling
-
-## Features
-- Responsive navigation
-- Mobile-friendly layout
-- Expandable content sections
-- Publications list
-- News section with archive functionality
-- High contrast mode support via media queries
-
-## Portfolio Note
-This repository contains a `portfolio` folder with additional code that is currently not in use. The portfolio content is temporarily being served from an external Google Sites page (https://sites.google.com/view/emmafrid). Future updates will integrate this content directly into this website with improved accessibility features.
+## Repository Notes
+- **Portfolio folder**: Contains additional code that is currently not in use. The portfolio content is temporarily being served from an external Google Sites page (https://sites.google.com/view/emmafrid).
+- **Template-files folder**: Contains template files used for reference in the site's development.

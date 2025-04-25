@@ -1,9 +1,9 @@
 # Emma Frid - Personal Webpage
 
 ## Live Demo
-[View the live website](https://emmafrid.github.io)
+[View the live website](https://emmenru.github.io)
 
-
+**Note:** The website is also accessible via [www.emmafrid.se](http://www.emmafrid.se), which redirects to this GitHub Pages site.
 
 ## Accessibility Features
 This website has been designed with accessibility as a core principle and has been tested with:
